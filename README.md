@@ -120,10 +120,15 @@ The Neutral Axis dynamically shifts to maintain internal equilibrium as flexural
 ├── notebooks/
 │   ├── cfst_structural_engine.ipynb    # Fiber-section solver, data generation, LSTM training
 │   └── model_comparison.ipynb          # Benchmarking across 9 ML models + Taylor diagram
+├── src/
+│   ├── generate_data.py                # Standalone: Eurocode-constrained physics data generator
+│   ├── train_lstm.py                   # Standalone: trains the Dual-Output Glass-Box LSTM
+│   └── benchmark_models.py             # Standalone: 9-model benchmark + Taylor diagram
 ├── assets/
 │   ├── multitask_targets.png           # Training targets plot (Moment + Neutral Axis)
 │   └── surrogate_and_convergence.png   # Convergence curve & surrogate accuracy plot
 ├── requirements.txt                    # Environment dependencies
+├── LICENSE                             # MIT License
 └── README.md
 ```
 
